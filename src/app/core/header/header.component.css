@@ -1,0 +1,30 @@
+* {
+  background-color: wheat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.creat {
+  font-size: 20px;
+  color: rgb(40, 141, 40);
+}
+
+.event {
+  font-size: 26px;
+  color: rgb(243, 57, 57)
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu div {
+  padding-left: 10px;
+  font-size: 20px;
+}

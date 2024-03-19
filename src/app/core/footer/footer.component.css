@@ -1,0 +1,24 @@
+* {
+  background-color: burlywood;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-me div {
+  padding-left: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}

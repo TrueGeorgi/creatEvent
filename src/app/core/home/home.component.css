@@ -1,0 +1,23 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  margin: 50px 0;
+  font-size: 50px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  font-style: italic;
+}
+
+.text-one {
+  margin-bottom: 20px;
+}
