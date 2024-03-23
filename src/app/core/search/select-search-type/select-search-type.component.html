@@ -1,0 +1,8 @@
+<p class="question">Find an Event</p>
+
+<div class="slection-box-container">
+  <div *ngFor="let event of events">
+    <app-selection-box [eventType]="event" class="selection-box" />
+  </div>
+</div>
+

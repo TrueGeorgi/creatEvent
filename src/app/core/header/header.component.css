@@ -1,11 +1,16 @@
 * {
-  background-color: wheat;
+  background-color: rgb(33, 17, 51);
+  color: rgb(250, 246, 241);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 25px 20px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .creat {
@@ -27,4 +32,9 @@
 .menu div {
   padding-left: 10px;
   font-size: 20px;
+}
+
+.nav-btn:hover {
+  color: rgb(40, 141, 40);
+  cursor: pointer;
 }

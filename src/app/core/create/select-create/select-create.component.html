@@ -1,0 +1,7 @@
+<h1 class="question">Create an Event</h1>
+
+<div class="event-selection-container">
+    <div  *ngFor="let event of events">
+      <app-selection-box [eventType]="event" />
+    </div>
+</div>

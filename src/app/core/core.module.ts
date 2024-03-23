@@ -2,29 +2,22 @@ import { NgModule, createComponent } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
-import { CreateComponent } from './create/create.component';
 import { SharedModule } from '../shared/shared.module';
-
-
+import { ErrorComponent } from './error/error.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CreateModule } from './create/create.module';
+import { SearchModule } from './search/search.module';
 
 @NgModule({
   declarations: [
     FooterComponent,
     HeaderComponent,
-    SearchComponent,
     HomeComponent,
-    CreateComponent
+    ErrorComponent
   ],
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
-  exports: [
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent
-  ]
+  imports: [CommonModule, SharedModule, FontAwesomeModule, CreateModule, SearchModule],
+  providers: [],
+  exports: [FooterComponent, HeaderComponent, HomeComponent],
 })
-export class CoreModule { }
+export class CoreModule {}

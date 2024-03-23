@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateComponent } from './create.component';
+import { ImageBoxComponent } from './image-box.component';
 
-describe('CreateComponent', () => {
-  let component: CreateComponent;
-  let fixture: ComponentFixture<CreateComponent>;
+describe('ImageBoxComponent', () => {
+  let component: ImageBoxComponent;
+  let fixture: ComponentFixture<ImageBoxComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CreateComponent]
+      declarations: [ImageBoxComponent]
     });
-    fixture = TestBed.createComponent(CreateComponent);
+    fixture = TestBed.createComponent(ImageBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

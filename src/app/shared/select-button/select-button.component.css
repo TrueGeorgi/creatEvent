@@ -1,0 +1,9 @@
+.event-name {
+  border: 1px solid black;
+  background-color: rgb(163, 207, 167);
+  padding: 8px;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}

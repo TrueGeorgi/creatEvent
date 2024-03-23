@@ -1,0 +1,19 @@
+.slection-box-container {
+  display: grid;
+  row-gap: 40px;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 45px;
+}
+
+.question {
+  margin: 25px 0 55px 0;
+  text-align: center;
+  font-size: 26px;
+}
+
+.selection-box {
+  margin-left: auto;
+  margin-right: auto;
+}

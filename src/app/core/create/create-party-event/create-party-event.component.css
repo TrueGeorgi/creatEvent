@@ -1,0 +1,27 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  margin-top: 30px;
+}
+
+.party-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.party-image {
+  width: 130px;
+  height: 80px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+p {
+  background-color: rgb(163, 207, 167);;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}

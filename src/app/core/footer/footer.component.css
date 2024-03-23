@@ -1,5 +1,6 @@
 * {
-  background-color: burlywood;
+  background-color: rgb(33, 17, 51);
+  color: rgb(250, 246, 241);
 }
 
 .footer {
@@ -21,4 +22,8 @@
   font-size: 12px;
   display: flex;
   align-items: center;
+}
+
+.contact-me {
+  padding-right: 10px;
 }
