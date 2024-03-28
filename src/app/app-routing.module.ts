@@ -14,6 +14,10 @@ import { SearchSportsEventsComponent } from './core/search/search-sports-events/
 import { SearchPartyEventsComponent } from './core/search/search-party-events/search-party-events.component';
 import { SearchTripEventsComponent } from './core/search/search-trip-events/search-trip-events.component';
 import { SearchAllEventsComponent } from './core/search/search-all-events/search-all-events.component';
+import { BabyPartyComponent } from './core/create/create-party-event/baby-party/baby-party.component';
+import { BirthdayPartyComponent } from './core/create/create-party-event/birthday-party/birthday-party.component';
+import { NewYearsEveComponent } from './core/create/create-party-event/new-years-eve/new-years-eve.component';
+import { FootballComponent } from './core/create/create-sports-event/football/football.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +33,11 @@ const routes: Routes = [
   { path: 'search-sports-events', component: SearchSportsEventsComponent },
   { path: 'search-party-events', component: SearchPartyEventsComponent },
   { path: 'search-trip-events', component: SearchTripEventsComponent },
-  { path:  'search-all-events', component: SearchAllEventsComponent},
+  { path: 'search-all-events', component: SearchAllEventsComponent},
+  { path: 'baby-party', component: BabyPartyComponent},
+  { path: 'birthday-party', component: BirthdayPartyComponent},
+  { path: 'new-years-eve', component: NewYearsEveComponent},
+  { path: 'football', component: FootballComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'error'}
 ];
 

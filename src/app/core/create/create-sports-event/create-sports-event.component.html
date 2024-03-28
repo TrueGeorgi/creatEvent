@@ -1,1 +1,6 @@
-<p>create-sports-event works!</p>
+<div class="main-container">
+  <div *ngFor="let event of events" class="party-container">
+    <img class="party-image" src="{{event.image}}" alt="pic" (click)="navigation.navTo(event.routingName)">
+    <p (click)="navigation.navTo(event.routingName)">{{ event.name }}</p>
+  </div>
+</div>
