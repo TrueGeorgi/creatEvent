@@ -1,0 +1,25 @@
+<div class="main-container">
+  <div>
+    <div class="form-group">
+      <label for="{{form.attributeName}}">{{ form.labelText }}</label>
+      <input
+        type="{{ form.type }}"
+        id="{{form.id}}"
+        name="{{form.attributeName}}"
+        [required]="form.attributes.includes('required')"
+        [(ngModel)]="inputValue" 
+        #nameInput="ngModel"
+        placeholder=""
+      />
+    </div>
+
+    <div *ngIf="nameInput.touched">
+      <div class="missing-error" *ngIf="nameInput.errors?.['required']">
+        You must type {{ article }} {{ form.name }}
+      </div>
+      <div class="missing-error" *ngIf="nameInput.errors?.['email']">
+        The E-mail is invalid
+      </div>
+    </div>
+  </div>
+</div>

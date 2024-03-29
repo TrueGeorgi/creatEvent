@@ -4,6 +4,7 @@ import { NewYearsEveComponent } from './new-years-eve/new-years-eve.component';
 import { BirthdayPartyComponent } from './birthday-party/birthday-party.component';
 import { BabyPartyComponent } from './baby-party/baby-party.component';
 import { CreatePartyEventComponent } from './create-party-event.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { CreatePartyEventComponent } from './create-party-event.component';
     CreatePartyEventComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class CreatePartyEventModule { }

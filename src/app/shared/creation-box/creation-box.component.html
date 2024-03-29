@@ -1,0 +1,11 @@
+<div class="main-container">
+  <p>{{title}}</p>
+
+  <form>
+    <div *ngFor="let currentForm of forms">
+      <app-event-input-form [form]="currentForm"></app-event-input-form>
+    </div>
+      <app-create-button [buttonName]="buttonName"/>
+  </form>
+  
+</div>

@@ -5,10 +5,10 @@
   </div>
   <div class="menu">
     <div class="nav-btn" (click)="navigation.navTo('')">Home</div>
-    <div class="nav-btn" (click)="navigation.navTo('create')">Create</div>
+    <div *ngIf="loggedIn" class="nav-btn" (click)="navigation.navTo('create')">Create</div>
     <div class="nav-btn" (click)="navigation.navTo('search')">Search</div>
-    <div class="nav-btn" (click)="navigation.navTo('log-in')">Login</div>
-    <div class="nav-btn" (click)="navigation.navTo('register')">Register</div>
-    <div class="nav-btn" (click)="navigation.navTo('profile')">Profile</div>
+    <div *ngIf="!loggedIn" class="nav-btn" (click)="navigation.navTo('log-in')">Login</div>
+    <div *ngIf="!loggedIn" class="nav-btn" (click)="navigation.navTo('register')">Register</div>
+    <div *ngIf="loggedIn" class="nav-btn" (click)="navigation.navTo('profile')">Profile</div>
   </div>
 </div>

@@ -15,9 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule,
     FontAwesomeModule,
-    FormsModule,
+    FormsModule, // Template driven approach
+    CoreModule,
     ReactiveFormsModule
   ],
   providers: [],

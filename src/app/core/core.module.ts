@@ -8,6 +8,7 @@ import { ErrorComponent } from './error/error.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CreateModule } from './create/create.module';
 import { SearchModule } from './search/search.module';
+import { UserModule } from '../user/user.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SearchModule } from './search/search.module';
     HomeComponent,
     ErrorComponent
   ],
-  imports: [CommonModule, SharedModule, FontAwesomeModule, CreateModule, SearchModule],
+  imports: [CommonModule, SharedModule, FontAwesomeModule, CreateModule, SearchModule, UserModule],
   providers: [],
   exports: [FooterComponent, HeaderComponent, HomeComponent],
 })

@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { SelectionBoxComponent } from './selection-box/selection-box.component';
 import { SelectButtonComponent } from './select-button/select-button.component';
 import { ImageBoxComponent } from './image-box/image-box.component';
+import { EventInputFormComponent } from './event-input-form/event-input-form.component';
+import { FormsModule } from '@angular/forms';
+import { CreateButtonComponent } from './create-button/create-button.component';
+import { CreationBoxComponent } from './creation-box/creation-box.component';
 
 
 
@@ -10,11 +14,15 @@ import { ImageBoxComponent } from './image-box/image-box.component';
   declarations: [
     SelectionBoxComponent,
     SelectButtonComponent,
-    ImageBoxComponent
+    ImageBoxComponent,
+    EventInputFormComponent,
+    CreateButtonComponent,
+    CreationBoxComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
-  exports: [SelectionBoxComponent]
+  exports: [SelectionBoxComponent, EventInputFormComponent, CreationBoxComponent, CreateButtonComponent]
 })
 export class SharedModule { }
