@@ -33,3 +33,10 @@
   </div>
   <button>Register</button>
 </form>
+
+<div *ngIf="showError">
+  <div>Some of the following errors occured:</div>
+  <div>* Invalid E-mail format. Correct format: *****@***.***</div>
+  <div>* There is already an existing account for this E-mail</div>
+  <div>* The password's lenght is less than 6 symbols</div>
+</div>

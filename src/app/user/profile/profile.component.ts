@@ -9,6 +9,8 @@ import { NavigationService } from 'src/app/navigation.service';
 })
 export class ProfileComponent {
 
+  profileName: string = this.loggedStatus.username;
+
   constructor(private loggedStatus: LoggedService, private navigation: NavigationService) {}
 
   logOut() {

@@ -9,6 +9,10 @@
   font-size: 50px;
 }
 
+.user {
+  font-size: 50px;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;

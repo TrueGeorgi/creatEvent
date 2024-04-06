@@ -1,5 +1,5 @@
 <div class="main-container">
-  <h1 class="welcome">Welcome!</h1>
+  <h1 class="welcome">Welcome<span class="user" *ngIf="userExist()">, {{user}}</span>!</h1>
 
   <div class="text-container">
     <p class="text-one">
